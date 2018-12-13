@@ -1,0 +1,51 @@
+﻿header {
+    height: 48px;
+    background: $green;
+    color: white;
+    padding: 12px 0 16px 0;
+
+    .icon-phone:before {
+        color: white;
+    }
+
+    nav {
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        #advertisement {
+            padding-right: 10px;
+            border-right: 1px solid;
+            border-color: white;
+        }
+
+        #login {
+            padding-left: 10px;
+
+            .icon-user {
+                color: white;
+            }
+        }
+    }
+
+    &.inverse {
+        background-color: white;
+        color: $grey-blue;
+        padding: 20px 0 100px 0;
+
+        nav {
+            padding-top: 10px;
+
+            .icon-phone {
+                &:before {
+                    color: $grey-blue;
+                }
+            }
+        }
+    }
+}

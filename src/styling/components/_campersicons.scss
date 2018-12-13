@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'campersicons';
+    src: url('../assets/fonts/campersicons/campersicons.eot?qvio0g');
+    src: url('../assets/fonts/campersicons/campersicons.eot?qvio0g#iefix') format('embedded-opentype'), url('../assets/fonts/campersicons/campersicons.ttf?qvio0g') format('truetype'), url('../assets/fonts/campersicons/campersicons.woff?qvio0g') format('woff'), url('../assets/fonts/campersicons/campersicons.svg?qvio0g#campersicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'campersicons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $green;
+}
+
+.icon-camper-2:before {
+    content: "\e903";
+}
+
+.icon-camper-3:before {
+    content: "\e905";
+}
+
+.icon-camper-4:before {
+    content: "\e909";
+}
+
+.icon-caravan:before {
+    content: "\e90d";
+}
+
+.icon-tent:before {
+    content: "\e90e";
+}
+
+.icon-camper:before {
+    content: "\e900";
+}
+
+.icon-bel:before {
+    content: "\e901";
+}
+
+.icon-download:before {
+    content: "\e906";
+}
+
+.icon-hart:before {
+    content: "\e908";
+}
+
+.icon-trash-bin:before {
+    content: "\e90c";
+}
+
+.icon-lamp:before {
+    content: "\e902";
+}
+
+.icon-magazine:before {
+    content: "\e904";
+}
+
+.icon-sign:before {
+    content: "\e907";
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-user:before {
+    content: "\e971";
+}
+
+.icon-search:before {
+    content: "\e986";
+}

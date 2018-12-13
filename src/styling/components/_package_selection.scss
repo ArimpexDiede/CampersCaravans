@@ -1,0 +1,147 @@
+﻿.package-selection-radios {
+    margin-top: 20px;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 13px;
+
+    .package-selection-radio {
+
+        &:not(.no-border) {
+            border-right: 1px solid $border-color;
+        }
+
+        .package-selection-radio-title {
+            font-size: 1.0625rem;
+            padding-left: 10px;
+        }
+
+        .package-selection-radio-sub-title {
+            color: theme-color("primary");
+            padding-left: 10px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    }
+}
+
+.package-selection {
+    height: 410px;
+    border: 1px solid $border-color;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    padding: 43px 30px 50px 30px;
+    position: relative;
+    word-wrap: break-word;
+    white-space: normal;
+
+    h3 {
+        font-weight: bold;
+        color: theme-color("primary");
+    }
+
+    .glyphicon {
+        padding-right: 10px;
+    }
+
+    .package-selection-footer {
+        position: absolute;
+        height: 52px;
+        bottom: 40px;
+        border: 1px solid theme-color("primary");
+        border-radius: $border-radius;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+        left: 30px;
+        right: 30px;
+        color: theme-color("primary");
+
+        &:hover {
+            background-color: theme-color("primary");
+            color: white;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    &.active {
+        border: 1px solid theme-color("primary");
+        background-color: $green-lighter;
+        color: theme-color("primary");
+
+        .remain-text-color {
+            color: $body-color;
+        }
+
+        .package-selection-footer {
+            background-color: theme-color("primary");
+            color: white;
+        }
+    }
+
+    &:hover {
+        border: 1px solid theme-color("primary");
+        cursor: pointer;
+    }
+
+    .ribbon {
+        background-color: $orange;
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute;
+        right: -40px;
+        top: 36px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 10px $gray-500;
+        width: 190px;
+        display: list-item;
+        height: 30px;
+        text-align: center;
+        padding: 7px;
+        color: white;
+    }
+}
+
+.package-selections-small {
+    .package-selection {
+        height: 230px;
+        padding-top: 21px;
+
+        img {
+            height: 131px;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+            height: 250px;
+        }
+    }
+}
+
+.package-selections-mobile {
+    .package-selection {
+        padding: 0;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.extra-promos {
+    color: theme-color("primary");
+
+    .form-check {
+        color: $body-color;
+    }
+
+    .glyphicon {
+        color: $body-color;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}

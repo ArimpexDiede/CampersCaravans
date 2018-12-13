@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Stylesheet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CampersCaravans-Stylesheet" transform="translate(-2253.000000, -354.000000)" fill="#21A157">
+            <path d="M2268,384 C2259.71573,384 2253,377.284271 2253,369 C2253,360.715729 2259.71573,354 2268,354 C2276.28427,354 2283,360.715729 2283,369 C2283,377.284271 2276.28427,384 2268,384 Z M2273.6,363 L2262.4,363 C2261.63,363 2261.007,363.61875 2261.007,364.375 L2261,372.625 C2261,373.38125 2261.63,374 2262.4,374 L2273.6,374 C2274.37,374 2275,373.38125 2275,372.625 L2275,364.375 C2275,363.61875 2274.37,363 2273.6,363 Z M2273.6,365.75 L2268,369.1875 L2262.4,365.75 L2262.4,364.375 L2268,367.8125 L2273.6,364.375 L2273.6,365.75 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+﻿#done-page {
+    .icon-social_facebook, .icon-social_twitter, .icon-social_google, .icon-social_email {
+        font-size: 1.875rem;
+    }
+
+    .card-body {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .circle {
+        border: solid 2px #0087cc;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 20px;
+        width: 61px;
+        height: 61px;
+        vertical-align: middle;
+        margin-top: -10px;
+
+        img {
+            width: 2rem;
+        }
+
+        text-align: center;
+        padding-top: 16px;
+        padding-left: 5px;
+    }
+}

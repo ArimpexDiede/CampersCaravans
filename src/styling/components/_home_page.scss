@@ -1,0 +1,13 @@
+﻿@import "components/_home_search";
+@import "components/_home-categories";
+@import "components/_arch_content";
+@import "components/_redactie_content";
+@import "components/_brands_content";
+@import "components/_new_content";
+@import "components/_info_content";
+
+#home-site-blocks {
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-top: 120px;
+    }
+}

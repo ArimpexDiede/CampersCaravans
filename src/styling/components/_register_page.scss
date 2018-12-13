@@ -1,0 +1,7 @@
+﻿#register {
+    margin-bottom: 270px;
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 120px;
+    }
+}

@@ -1,0 +1,11 @@
+#captchaModal {
+    .modal-dialog {
+        max-width: 336px;
+
+        .modal-footer {
+            button {
+                width: calc(50% - .25rem);
+            }
+        }
+    }
+}
