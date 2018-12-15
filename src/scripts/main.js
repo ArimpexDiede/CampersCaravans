@@ -213,6 +213,39 @@ $(function() {
         });
     }
 
+    if (document.getElementById("search-page") !== null && $("#div-gpt-ad-1520527894291-3") !== null) {
+        $(window).scroll(function() {
+            setTimeout(function() {
+                var topofDiv = $("#div-gpt-ad-1520527894291-3").offset().top;
+                var body = $("body").height();
+                var footer = $("footer").height();
+                var dis = $("#site-disclaimer").height();
+                var div = $(".filter-options div[id*='google_ads_iframe']");
+                if (window.innerHeight > div.height() + 80) {
+
+                    if ($(window).scrollTop() > topofDiv - 81) {
+                        div.addClass("fixed-sidebar");
+                    } else {
+                        div.removeClass("fixed-sidebar");
+                    }
+                    if (div.offset().top + div.height() >= $('footer').offset().top - 10) {
+                        div.css({
+                            "position": "absolute",
+                            "top": "auto",
+                            "bottom": "-20px",
+                            "right": "12px"
+                        });
+                    }
+                    if ($(window).scrollTop() < body - 220 - footer - div.height() - dis) {
+                        div.removeAttr("style");
+                    }
+                } else {
+                    div.removeAttr("style").removeClass("fixed-sidebar");
+                }
+            }, 100);
+        });
+    }
+
     $("#top-fixed-info .btn-secondary").on("click", function() {
         document.getElementById("detail-sidebar").scrollIntoView({
             behavior: "smooth"

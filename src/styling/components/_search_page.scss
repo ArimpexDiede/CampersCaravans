@@ -16,6 +16,7 @@
     }
 
     .image-placeholder {
+      background-color: #eee;
         img {
             position: relative;
             right: auto;
@@ -48,9 +49,8 @@
 
     .image-placeholder-small {
         @include media-breakpoint-down(sm) {
-            height: auto;
-            max-width: 100%;
-            max-height: 600px;
+            height: 220px;
+            max-width: 340px;
         }
     }
 
