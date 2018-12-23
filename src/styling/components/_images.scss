@@ -1,6 +1,4 @@
-img.logo {
-    width: 180px;
-}
+
 
 .image-placeholder {
     overflow: hidden;
@@ -11,8 +9,10 @@ img.logo {
         right: 0;
         bottom: 0;
         width: 100%;
-        min-height: 100%;
+        height: 100%;
+
     }
+
 }
 
 .image-placeholder-largest {
@@ -53,6 +53,7 @@ img.logo {
     @include media-breakpoint-up(lg) {
         height: $image-height-medium-lg;
     }
+
 }
 
 .image-placeholder-small {
@@ -66,6 +67,7 @@ img.logo {
     @include media-breakpoint-up(lg) {
         height: $image-height-small-lg;
     }
+
 }
 
 .image-placeholder-squared-small {

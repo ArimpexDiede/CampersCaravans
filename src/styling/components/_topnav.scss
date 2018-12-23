@@ -1,8 +1,12 @@
 .topnav {
+    .logo {
+        width: 210px;
+    }
+
     #navbarText {
         margin-top: 4px;
         @include media-breakpoint-down(md) {
-          .nav-item {
+            .nav-item {
                 margin-top: 0;
 
                 .nav-link {
@@ -99,7 +103,6 @@
                     }
 
                     .dropdown-menu {
-
                         padding: 0.8rem 0;
                         top: 2.7rem;
                         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

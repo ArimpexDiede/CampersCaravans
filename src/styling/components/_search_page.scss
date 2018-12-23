@@ -31,10 +31,6 @@
                 width: auto;
                 margin: auto;
                 display: block;
-
-                @include media-breakpoint-down(sm) {
-                  margin-left: 0;
-                }
             }
         }
     }
@@ -47,12 +43,7 @@
         }
     }
 
-    .image-placeholder-small {
-        @include media-breakpoint-down(sm) {
-            height: 220px;
-            max-width: 340px;
-        }
-    }
+
 
     .category-tile {
         font-size: 1.1rem;
@@ -61,11 +52,6 @@
         border-bottom: 1px solid $border-color;
         margin-bottom: 16px;
     }
-
-    .glyphicon:not(.glyphicon-bell, .glyphicon-star) {
-        color: $black;
-    }
-
     #search-sorting {
         background-color: $green-lightest;
         padding: 10px 14px;
@@ -89,15 +75,6 @@
 
         #sorting-search-pagingsize {
             border-radius: $border-radius;
-        }
-    }
-
-      img:not(.portrait-img) {
-        @include media-breakpoint-down(md) {
-            margin: 0;
-            max-width: 100% !important;
-            height: auto !important;
-            width: 100% !important;
         }
     }
 }

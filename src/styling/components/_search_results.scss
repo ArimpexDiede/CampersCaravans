@@ -36,6 +36,15 @@
                     }
                 }
             }
+
+            .image-placeholder-small {
+                @include media-breakpoint-up(sm) {
+                    height: 387px;
+                }
+                @include media-breakpoint-up(md) {
+                    height: 170px;
+                }
+            }
         }
 
         a:not(.btn) {
@@ -78,7 +87,6 @@
     #afstand-accordion {
         .btn.btn-secondary {
             width: 100%;
-            padding: 14px 0;
             cursor: pointer;
 
             &.sticky-btn {

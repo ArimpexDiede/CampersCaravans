@@ -1,6 +1,10 @@
 @import "../bootstrap/_mixins";
 
 #arch-content {
+    .image-placeholder-medium.home-ad-1 {
+        display: none;
+    }
+
     h4 {
         a {
             text-decoration: none !important;
@@ -29,10 +33,39 @@
             border-bottom: $border-width $border-color solid;
         }
     }
+    @include media-breakpoint-up(sm) {
+        .image-placeholder-large,
+        .image-placeholder-medium {
+            height: 387px;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        .image-placeholder-large {
+            height: 264px;
+        }
+
+        .image-placeholder-medium {
+            height: 170px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .image-placeholder-large {
+            height: 357px;
+        }
+
+        .image-placeholder-medium {
+            height: 232px;
+        }
+    }
 
     #second-content {
         margin-top: 40px;
         overflow: hidden;
+
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 0;
+        }
 
         .col {
             margin-bottom: 20px;
@@ -65,15 +98,16 @@
             height: 25px;
             overflow: hidden;
         }
-        .placeholder-link {
-          height: 25px;
-          overflow: hidden;
 
-          .row {
-              position: absolute;
-              bottom: 0;
-          }
-      }
+        .placeholder-link {
+            height: 25px;
+            overflow: hidden;
+
+            .row {
+                position: absolute;
+                bottom: 0;
+            }
+        }
 
         a:not(.btn) {
             color: theme-color("secondary");

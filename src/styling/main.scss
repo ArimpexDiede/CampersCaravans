@@ -48,6 +48,14 @@ body {
         object-fit: unset !important;
     }
 
+    .fa,
+    .fab,
+    .fal,
+    .far,
+    .fas {
+        margin-left: 5px;
+    }
+
     input::-webkit-calendar-picker-indicator {
         display: none;
     }
@@ -77,6 +85,25 @@ body {
                 height: 25px;
                 overflow: hidden;
             }
+        }
+
+        .image-placeholder-medium {
+            height: calc((100vw - 24px) * .75);
+
+            @include media-breakpoint-up(sm) {
+                height: 387px;
+            }
+            @include media-breakpoint-up(md) {
+                height: 170px;
+            }
+            @include media-breakpoint-up(lg) {
+                height: 232px;
+            }
+
+            img {
+              max-height: none !important;
+            }
+
         }
     }
 
