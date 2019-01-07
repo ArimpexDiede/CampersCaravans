@@ -12,6 +12,7 @@ var $ = require('jquery');
 window.jQuery = $;
 window.$ = $;
 
+
 $(window).on('load', function() {
     //settings for the photo slider at detail-page
     $('.photo-slider-carousel').flexslider({
@@ -81,7 +82,24 @@ $(window).on('load', function() {
             }
         }
         adjustFlexsliderHeight();
+        $(window).resize(adjustFlexsliderHeight);
     }
+    if (document.getElementById("search-page") !== null) {
+
+        $("#search-results-list img, .last-content img, .highlighted-search-results img").each(function() {
+            if (this.naturalHeight > this.naturalWidth) {
+                this.classList.add('portrait-img')
+            }
+            if ($("#search-results-list .image-placeholder-small").height() == 220) {
+                if ($(this).height() < 220) {
+                    var height = (220 - $(this).height()) / 2;
+                    $(this).css("top", height)
+                }
+            }
+        });
+
+    }
+
 });
 
 $(function() {
